@@ -30,3 +30,22 @@ Caveats
 Due to the inability to detect changes in child visibility in older versions of ViewGroup, it is necessary to call `GridLayout.notifyChildVisibilityChanged()` whenever you change the visibility of a child View of a GridLayout.
 
 If you never change the visibility of children, you don't have to worry about this.
+
+
+Maven
+=======
+Possible usage: add this project as a submodule to your project and add something like
+
+    <dependency>
+    	<groupId>android.gridlayout</groupId>
+    	<artifactId>library</artifactId>
+        <version>GIT-SNAPSHOT</version>
+        <type>apklib</type>
+        <scope>compile</scope>
+    </dependency>
+    
+to your pom.xml file. Note that the android maven plugin must be at least version 3.3.0 to support apklibs.
+
+Support Library
+===============
+Currently, including GridLayout from the android compatibility library in a maven project seems not possible. This provides a possible alternative.
