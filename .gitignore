@@ -3,3 +3,21 @@ gen/
 .settings/
 .project
 .classpath
+
+# OS X
+/.com.apple.timemachine.supported
+/.fseventsd
+.DS_Store
+
+
+# IntelliJ
+/.idea/*
+*.iml
+/*.ipr
+/*.iws
+/.idea/misc.xml
+
+# Compiled
+/target
+/*/target
+
