@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>android</groupId>
+    <artifactId>gridlayout</artifactId>
+    <version>GIT-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Backported gridlayout</name>
+
+    <scm>
+        <tag>HEAD</tag>
+        <url>https://github.com/sgdesmet/android-gridlayout</url>
+        <connection>git://github.com/sgdesmet/android-gridlayout.git</connection>
+        <developerConnection>git@github.com:sgdesmet/android-gridlayout.git</developerConnection>
+    </scm>
+
+    <modules>
+        <module>library</module>
+    </modules>
+    
+    <properties>
+        <plugin.compiler.version>2.5.1</plugin.compiler.version>
+        <android.maven.plugin.version>3.3.0</android.maven.plugin.version>
+        <android.api.version>4.0.1.2</android.api.version>
+    </properties>
+    
+    
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${plugin.compiler.version}</version>
+                    <configuration>
+                        <source>1.6</source>
+                        <target>1.6</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <version>${android.maven.plugin.version}</version>
+                    <extensions>true</extensions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
