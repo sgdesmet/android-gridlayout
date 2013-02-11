@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     
     <groupId>android</groupId>
-    <artifactId>gridlayout</artifactId>
-    <version>GIT-SNAPSHOT</version>
+    <artifactId>gridlayout-backport</artifactId>
+    <version>1.0</version>
     <packaging>pom</packaging>
     <name>Backported gridlayout</name>
 
